@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+version="2.4">
+	<display-name>Archetype Created Web Application</display-name>
+	
+	
+  	<servlet>
+  		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.examen.servlets.LoginServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>LoginServlet</servlet-name>
+  		<url-pattern>/loginServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>AjouterAnnonceServlet</servlet-name>
+		<servlet-class>com.examen.servlets.AjouterAnnonceServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>AjouterAnnonceServlet</servlet-name>
+  		<url-pattern>/ajouterAnnonceServlet</url-pattern>
+  	</servlet-mapping>
+
+ 	  	<servlet>
+  		<servlet-name>AdminDashboardServlet</servlet-name>
+		<servlet-class>com.examen.servlets.AdminDashboardServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>AdminDashboardServlet</servlet-name>
+  		<url-pattern>/adminDashboardServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>AjouterUtilisateurServlet</servlet-name>
+		<servlet-class>com.examen.servlets.AjouterUtilisateurServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>AjouterUtilisateurServlet</servlet-name>
+  		<url-pattern>/ajouterUtilisateurServlet</url-pattern>
+  	</servlet-mapping>
+
+
+  	<servlet>
+  		<servlet-name>AnnonceServlet</servlet-name>
+		<servlet-class>com.examen.servlets.AnnonceServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>AnnonceServlet</servlet-name>
+  		<url-pattern>/annonceServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>ListeAnnonceServlet</servlet-name>
+		<servlet-class>com.examen.servlets.ListeAnnonceServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>ListeAnnonceServlet</servlet-name>
+  		<url-pattern>/listeAnnonceServlet</url-pattern>
+  	</servlet-mapping>
+
+
+  	<servlet>
+  		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.examen.servlets.LogoutServlet</servlet-class>
+  	</servlet>
+
+ 	 <servlet-mapping>
+  		<servlet-name>LogoutServlet</servlet-name>
+  		<url-pattern>/logoutServlet</url-pattern>
+  	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
